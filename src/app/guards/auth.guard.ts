@@ -13,7 +13,7 @@ export class AuthGuard implements CanActivate {
   canActivate(): Observable<boolean> {
     return this.authService.user$.pipe(
       take(1),
-      map((user) => !!user), // user nesnesi varsa true, yoksa (null/undefined ise) false döndür.
+      map((user) => !!user), // user nesnesi varsa true, yoksa false döndür.
       tap((loggedIn) => {
         if (!loggedIn) {
           console.log(
