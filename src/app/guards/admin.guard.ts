@@ -1,4 +1,4 @@
-// src/app/guards/admin.guard.ts
+
 import { Injectable } from '@angular/core';
 import { CanActivate, Router } from '@angular/router';
 import { map, Observable, take, tap } from 'rxjs';
@@ -13,7 +13,7 @@ export class AdminGuard implements CanActivate {
   canActivate(): Observable<boolean> {
     return this.authService.user$.pipe(
       take(1),
-      // This line is corrected to always return a boolean
+     
       map((user) => !!(user && user.role === 'admin')),
       tap((isAdmin) => {
         if (!isAdmin) {
