@@ -4,7 +4,7 @@ import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { HomeComponent } from './components/home/home.component';
 import { AuthGuard } from './guards/auth.guard';
-// AdminComponent ve AdminGuard artık kullanılmadığı için importları silindi.
+
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -15,7 +15,7 @@ const routes: Routes = [
     component: HomeComponent,
     canActivate: [AuthGuard],
   },
-  // Admin rotası buradan kaldırıldı.
+ 
 ];
 
 @NgModule({
