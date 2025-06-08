@@ -1,4 +1,4 @@
-// src/app/services/auth.service.ts -- NİHAİ SÜRÜM
+
 
 import { Injectable } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
@@ -27,7 +27,7 @@ export class AuthService {
     private afs: AngularFirestore,
     private router: Router
   ) {
-    // Bu, hem Auth hem de Firestore'dan veri okuyan doğru ve tam user$ tanımıdır.
+    // Bu hem Auth hem de Firestore'dan veri okuyan doğru ve tam user tanımıdır.
     this.user$ = this.afAuth.authState.pipe(
       switchMap((user) => {
         if (user) {
