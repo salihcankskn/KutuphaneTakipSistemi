@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/home">Kitap Takip Sistemi</a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <ng-container *ngIf="authService.user$ | async as user; else guestMenu">
+          <li class="nav-item">
+            <a class="nav-link">Hoşgeldin, {{ user.email }}</a>
+          </li>
+          <li class="nav-item">
+            <button (click)="logout()" class="btn btn-outline-light">
+              Çıkış Yap
+            </button>
+          </li>
+        </ng-container>
+        <ng-template #guestMenu>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/login">Giriş Yap</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/register">Kayıt Ol</a>
+          </li>
+        </ng-template>
+      </ul>
+    </div>
+  </div>
+</nav>

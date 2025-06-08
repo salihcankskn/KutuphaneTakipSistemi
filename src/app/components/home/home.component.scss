@@ -1,0 +1,14 @@
+.summary-scroll-container {
+  // Alanın maksimum yüksekliğini belirliyoruz.
+  // Bu değeri kendi isteğinize göre değiştirebilirsiniz.
+  max-height: 200px;
+
+  // Sadece dikeyde ve sadece gerektiğinde kaydırma çubuğu göster.
+  overflow-y: auto;
+
+  // Kaydırma çubuğunun metnin üzerine gelmemesi için sağa küçük bir boşluk.
+  padding-right: 15px;
+
+  // Metnin alt alta (paragraf) formatını koru.
+  white-space: pre-wrap;
+}

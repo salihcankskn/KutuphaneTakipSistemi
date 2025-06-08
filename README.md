@@ -1,27 +1,67 @@
-# KutuphaneTakipSistemi
+Kütüphane Takip Sistemi (Angular & Firebase)
+Bu proje, Angular ve Firebase kullanılarak geliştirilmiş, web tabanlı bir kütüphane yönetim ve kitap takip sistemidir. Kullanıcıların kitapları ödünç alıp iade etmelerini sağlarken, adminler için tam bir kitap yönetimi paneli sunar.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.5.
+🚀 Temel Özellikler
+Tüm Kullanıcılar
+Kullanıcı Kimlik Doğrulama: Güvenli e-posta/şifre ile sisteme kayıt olma ve giriş yapma.
 
-## Development server
+Kitap Listeleme: Kütüphanedeki tüm kitapları anlık olarak görme.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Akıllı Arama: Kitap adı veya yazar adına göre anında filtreleme yaparak arama.
 
-## Code scaffolding
+Kitap Detayları: Kitabın kapak resmi, özeti ve durumu gibi bilgilere modal pencere üzerinden erişim.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Ödünç Alma ve İade Etme: Müsait olan kitapları ödünç alma ve daha önce ödünç alınan kitapları iade etme.
 
-## Build
+Admin Yetkileri
+Tam Kitap Yönetimi (CRUD): Yeni kitap ekleme, mevcut kitapların bilgilerini (başlık, yazar, özet, resim vb.) düzenleme ve sistemden tamamen silme.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Takip Özelliği: Ödünç alınmış bir kitabın hangi kullanıcı tarafından alındığını görme.
 
-## Running unit tests
+🛠️ Kullanılan Teknolojiler
+Ön Yüz (Frontend):
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Angular
 
-## Running end-to-end tests
+TypeScript
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+RxJS
 
-## Further help
+Bootstrap & Bootstrap Icons
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+SCSS
+
+Arka Uç & Veritabanı (Backend-as-a-Service):
+
+Firebase
+
+Firebase Authentication: Kullanıcı yönetimi ve kimlik doğrulama.
+
+Firestore Database: Kitap ve kullanıcı verileri için NoSQL bulut veritabanı.
+
+⚙️ Projeyi Yerel Ortamda Çalıştırma
+Projeyi kendi bilgisayarınızda çalıştırmak için aşağıdaki adımları izleyebilirsiniz.
+
+Projeyi Klonlayın:
+
+git clone https://github.com/KULLANICI_ADINIZ/PROJE_ADI.git
+
+Proje Klasörüne Gidin:
+
+cd PROJE_ADI
+
+Gerekli Paketleri Yükleyin:
+
+npm install
+
+Firebase Yapılandırmasını Ekleyin:
+
+Firebase konsolundan kendi projenizin yapılandırma bilgilerini alın.
+
+Bu bilgileri src/environments/environment.ts dosyası içindeki firebase nesnesine yapıştırın.
+
+Projeyi Başlatın:
+
+ng serve
+
+Uygulama, http://localhost:4200/ adresinde çalışmaya başlayacaktır.
