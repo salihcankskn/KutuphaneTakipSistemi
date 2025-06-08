@@ -1,7 +1,7 @@
 Kütüphane Takip Sistemi (Angular & Firebase)
 Bu proje, Angular ve Firebase kullanılarak geliştirilmiş, web tabanlı bir kütüphane yönetim ve kitap takip sistemidir. Kullanıcıların kitapları ödünç alıp iade etmelerini sağlarken, adminler için tam bir kitap yönetimi paneli sunar.
 
-🚀 Temel Özellikler
+ Temel Özellikler
 Tüm Kullanıcılar
 Kullanıcı Kimlik Doğrulama: Güvenli e-posta/şifre ile sisteme kayıt olma ve giriş yapma.
 
@@ -18,7 +18,7 @@ Tam Kitap Yönetimi (CRUD): Yeni kitap ekleme, mevcut kitapların bilgilerini (b
 
 Takip Özelliği: Ödünç alınmış bir kitabın hangi kullanıcı tarafından alındığını görme.
 
-🛠️ Kullanılan Teknolojiler
+ Kullanılan Teknolojiler
 Ön Yüz (Frontend):
 
 Angular
@@ -39,29 +39,4 @@ Firebase Authentication: Kullanıcı yönetimi ve kimlik doğrulama.
 
 Firestore Database: Kitap ve kullanıcı verileri için NoSQL bulut veritabanı.
 
-⚙️ Projeyi Yerel Ortamda Çalıştırma
-Projeyi kendi bilgisayarınızda çalıştırmak için aşağıdaki adımları izleyebilirsiniz.
 
-Projeyi Klonlayın:
-
-git clone https://github.com/KULLANICI_ADINIZ/PROJE_ADI.git
-
-Proje Klasörüne Gidin:
-
-cd PROJE_ADI
-
-Gerekli Paketleri Yükleyin:
-
-npm install
-
-Firebase Yapılandırmasını Ekleyin:
-
-Firebase konsolundan kendi projenizin yapılandırma bilgilerini alın.
-
-Bu bilgileri src/environments/environment.ts dosyası içindeki firebase nesnesine yapıştırın.
-
-Projeyi Başlatın:
-
-ng serve
-
-Uygulama, http://localhost:4200/ adresinde çalışmaya başlayacaktır.
