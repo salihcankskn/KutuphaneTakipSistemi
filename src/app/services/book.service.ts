@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import firebase from 'firebase/compat/app';
 
-// Book arayüzü aynı kalıyor
+
 export interface Book {
   id?: string;
   title: string;
@@ -50,7 +50,7 @@ export class BookService {
     return this.booksCollection.doc(id).delete();
   }
 
-  // YENİ: Kitap bilgilerini güncelleme fonksiyonu
+  //Kitap bilgilerini güncelleme fonksiyonu
   updateBook(id: string, data: Partial<Book>): Promise<void> {
     return this.booksCollection.doc(id).update(data);
   }
