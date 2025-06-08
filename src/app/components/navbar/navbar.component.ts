@@ -7,7 +7,7 @@ import { AuthService } from 'src/app/services/auth.service';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent implements OnInit {
-  // AuthService'i public yapıyoruz ki HTML template içinden direkt erişebilelim.
+  // AuthServicei public yapıyoruz ki HTML template içinden direkt erişebilelim.
   constructor(public authService: AuthService) {}
 
   ngOnInit(): void {}
